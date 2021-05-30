@@ -9,6 +9,7 @@ body {
   height: 700px;
   margin: 0%;
   display: flex;
+  overflow: hidden;
   /* justify-content: center; */
   /* align-items: center; */
   /* padding-top: 120px; */
@@ -32,17 +33,25 @@ body {
   font-size: 40px;
 }
 
-.img-header{
-  padding-left: 100px;
-  margin: 0;
-  position: relative;
+.block-header img{
+  height: 100%;
+  position:relative;
+  bottom: 0;
+  left: -100px;
 }
-.img-header img {
+
+/* .img-header{
+   padding-left: 100px; 
+   margin: 0;
+  position: relative;   
+  } */
+
+/* .img-header img {
   height: 100%;
   position: absolute;
   bottom: 0px;
   left: -100px;
-}
+} */ 
 
 /* about のスタイルシート */
 
