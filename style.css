@@ -91,10 +91,21 @@ left: -100px;
   background: radial-gradient(#babebd, #7c7e7d);
   height: 750px;
   padding-left: 150px;
-  position: relative;
+ 
 }
 
+.title-works h2{
+  color: #fff;
+}
+.content-works{
+  display: flex;
+ 
+}
 
+.content-works img{
+  width: 600px;
+ 
+}
 
 /* footer*/
 footer {
