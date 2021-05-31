@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  
 }
 
 .block-header {
@@ -19,7 +18,7 @@ body {
   color: #fff;
   /* float: left; */
   padding-top: 80px;
-  padding-left: 80px;  
+  padding-left: 80px;
 }
 
 .item-header h1 {
@@ -33,44 +32,45 @@ body {
   font-size: 40px;
 }
 
-.block-header img{
+.block-header img {
   height: 100%;
-  position:relative;
+  position: relative;
   bottom: 0;
   left: -100px;
 }
 
 /* .img-header{
-   padding-left: 100px; 
-   margin: 0;
-  position: relative;   
-  } */
-
+ padding-left: 100px; 
+ margin: 0;
+position: relative;   
+} */
 /* .img-header img {
-  height: 100%;
-  position: absolute;
-  bottom: 0px;
-  left: -100px;
-} */ 
-
-/* about のスタイルシート */
-
-.block-about{
+height: 100%;
+position: absolute;
+bottom: 0px;
+left: -100px;
+} */
+/* about ã®ã‚¹ã‚¿ã‚¤ãƒ«ã‚·ãƒ¼ãƒˆ */
+.block-about {
   display: flex;
-  justify-content: center;
+  overflow: hidden;
   height: 600px;
 }
 
-.item-about{
-  margin: 25px;
+.item-about {
+  margin: 45px 150px;
 }
 
-.item-about h2{
+.item-about h2 {
   font-size: 50px;
+  font-weight: normal;
 }
 
+.img-about img {
+  margin: 0 0 0 250px;
+}
 
-.list-item-about{
+.list-item-about {
   margin-left: 0;
   padding-left: 0;
   display: flex;
@@ -78,22 +78,25 @@ body {
   justify-content: left;
 }
 
-.list-item-about img{
+.list-item-about img {
   width: 30px;
   margin-right: 10px;
- 
 }
 
-.img-about img{
+.img-about img {
   height: 100%;
 }
 
-
-
-.block-works{
+.block-works {
   background: radial-gradient(#babebd, #7c7e7d);
+  height: 750px;
+  padding-left: 150px;
+  position: relative;
 }
 
+
+
+/* footer*/
 footer {
   height: 80px;
   background-color: #676867;
