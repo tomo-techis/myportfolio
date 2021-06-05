@@ -1,135 +1,155 @@
+
+/* ページ全体のスタイル */
 body {
-  margin: 0;
+  
+  min-width: 760px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  font-family: "Noto Sans JP", "sans-serif";
 }
 
-.block-header {
+/* ヘッド部のスタイル */
+header{
   background: radial-gradient(#babebd, #7c7e7d);
-  width: 100%;
   height: 700px;
-  margin: 0%;
-  display: flex;
   overflow: hidden;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* padding-top: 120px; */
+  display: flex;
 }
 
-.item-header {
-  color: #fff;
-  /* float: left; */
-  padding-top: 80px;
-  padding-left: 80px;
-  margin: 70px;
+.header-item{
+color: white;
+padding: 90px 0 0 125px;  /*上　右　下　左 */
 }
 
-.item-header h1 {
-  font-size: 100px;
+.header-item h1{
+  font-size: 80px;
   margin: 0;
   line-height: 120%;
-}
-
-.item-header p {
-  margin: 10px 0px;
-  font-size: 40px;
-}
-
-.block-header img {
-  height: 100%;
-  position: relative;
-  bottom: 0;
-  left: -100px;
-}
-
-
-.block-about {
-  display: flex;
-  overflow: hidden;
-  height: 600px;
-}
-
-.item-about {
-  margin-top: 45px;
-  margin-left: 150px;
- 
-}
-
-.item-about h2 {
-  font-size: 50px;
   font-weight: normal;
 }
 
-.img-about img {
-  display: block;
-  margin: 0 0 0 320px;
+.header-item p{
+  white-space: nowrap;
+  margin: 10px 0px;
+  font-size: 35px;
+  font-weight: normal;
 }
 
-.list-item-about {
-  margin-left: 0;
-  padding-left: 0;
+header img{
+  display: block;
+  height: 700px;
+  position: relative;
+  left: -120px;
+}
+
+
+/* aboutのスタイル */
+.block-about{
+  height:600px;
+  display: flex; 
+  overflow: hidden; 
+}
+
+.block-about >:last-child{
+  align-self: center;
+}
+
+
+.about-item{
+  margin:  90px 100px 0 125px;
+}
+
+.about-item h2{
+  font-size: 40px;
+}
+
+.about-item p{
+  font-size: 20px;
+}
+
+.block-about img{
+  display: block;
+  height: 650px; 
+}
+
+ .list-item-about {
+  margin: 0;
+  padding: 0;
   display: flex;
   list-style: none;
   justify-content: left;
 }
 
 .list-item-about img {
-  width: 30px;
-  margin-right: 10px;
+  margin: 0;
+  padding: 0;
+  width: 45px;
+  height: auto;
+  margin-right: 30px;
 }
 
-.img-about img {
-  height: 100%;
+
+.block-work{
+  overflow: hidden;
 }
 
-.block-works {
+/* work1 */
+.work1{
   background: radial-gradient(#babebd, #7c7e7d);
-  height: 750px;
+  height: 600px;
   padding-left: 150px;
   position: relative;
 }
 
-.title-works {
-  padding-top: 45px;
-
+.work1 h2{
+  margin: 0;
+  padding-top: 60px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: normal;
 }
 
-.title-works h2 {
-  color: #fff;
-  font-size: 35px;
+.work1-item h2{
+  padding-top: 35px;
 }
 
-.content-works {
+.work1-about{
   display: flex;
   position: absolute;
   bottom: 0;
 }
 
-.content-works img {
+
+.work1-img img{
   display: block;
-  width: 650px;
   margin: 0;
-  padding: 0;
+  width: 500px;
+ 
 }
 
-.item-works {
-  display: block;
-  margin-left: 50px;
-  padding-top: 50px;
-  color: #fff;
+.work1-item{
+  padding-left: 30px;
 }
 
-.item-works p {
-  font-size: 18px;
+.work1 p{
+  font-weight: normal;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 30px;
 }
 
-.item-list{
-  padding-top: 30px;
+.work1-link{
+  padding-top: 20px;
 }
-.item-list a {
+
+.work1-link a{
   text-decoration: none;
   border: 1px solid;
   padding: 5px 10px;
   margin-right: 10px;
 }
+
 #btn-web{
   background-color: white;
   color: #7c7e7d;
@@ -145,49 +165,74 @@ body {
 }
 
 
-
-.block-works2{
+/* work2 */
+.work2{
   background-color: white;
-  height: 750px;
+  height: 600px;
   padding-left: 150px;
   position: relative;
-  
 }
 
-.block-works2 .content-works{
+.work2-about{
   display: flex;
   position: absolute;
   top: 0;
 }
 
-.block-works .conten-works img{
+.work2-img img{
   display: block;
+  margin: 0;
+  width: 500px;
+ 
 }
 
-.block-works2 .item-works{
+.work2-item{
+  padding-top: 35px;
+  padding-left: 30px;
+}
+
+.work2 h2{
+  font-weight: normal;
   color: #676867;
+  letter-spacing: 1px;
 }
 
-.block-works2 .item-list #btn-web{
+.work2 p{
+  font-weight: normal;
+  color: #676867;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.work2-link{
+  padding-top: 20px;
+}
+
+.work2-link a{
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.work2-link #btn-web{
   background-color: white;
   color: #7c7e7d;
-  border:2px solid;
-  border-color: #7c7e7d;
+  border: 1px solid;
+  border-color:black;
+  letter-spacing: 2px;  
 }
 
-.block-works2 .item-list #btn-git{
+.work2-link #btn-git{
   background-color: #7c7e7d;
   color: white;
-  border:2px solid;
-  border-color: white;
+  border: 1px solid;
+  border-color: #7c7e7d;
+  letter-spacing: 2px;
 }
 
 
-/* footer*/
-footer {
-  height: 80px;
-  background-color: #676867;
-}
+
+/* コンタクトの部分のスタイル */
 
 .block-contact {
   height: 300px;
@@ -212,6 +257,14 @@ footer {
   vertical-align: middle;
   height: 40px;
 }
+
+/* footerの部分のスタイルシート */
+
+footer {
+  height: 80px;
+  background-color: #676867;
+}
+
 footer p {
   margin: 0;
   padding: 25px 0;
